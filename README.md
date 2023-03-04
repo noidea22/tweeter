@@ -16,3 +16,11 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## notes
+- sizing for the app only includes tablet (768px - 1024px) and for laptop screen (1025px and up.
+- when in tablet sizing backgroud color will be white, while in laptop sizing background color will be light blue.
+
+## Screenshots
+!["screen shot of the tablet view"](https://github.com/noidea22/tweeter/blob/master/docs/Screenshot%202023-03-03%20at%209.43.34%20PM.png?raw=true)
+!['screen shot of the laptop view"](https://github.com/noidea22/tweeter/blob/master/docs/Screenshot%202023-03-03%20at%209.42.59%20PM.png?raw=true)
