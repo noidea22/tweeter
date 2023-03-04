@@ -33,14 +33,14 @@ const createTweetElement = function(tweet) {
 </section>
 `)
   return $tweet;
-}
+};
 
 const renderTweets = function(tweets) {
-  const $tweetContainer = $('.old-tweets')
+  const $tweetContainer = $('.old-tweets');
   $tweetContainer.empty();
   for (const tweet of tweets) {
-    const $createTweetElement = createTweetElement(tweet)
-    $tweetContainer.prepend($createTweetElement)
+    const $createTweetElement = createTweetElement(tweet);
+    $tweetContainer.prepend($createTweetElement);
   };
 }
 
@@ -48,7 +48,7 @@ $(document).ready(function () {
   const loadTweets = function () {
     $.ajax('/tweets', { method: 'GET' })
       .then(function (data) {
-        renderTweets(data)
+        renderTweets(data);
       });
   }
 
