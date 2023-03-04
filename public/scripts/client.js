@@ -1,13 +1,7 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
-
+// code for client(front facing) side of page.
 
 // escape function to not get hacked.
-const escape = function (str) {
+const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
@@ -15,7 +9,7 @@ const escape = function (str) {
 
 
 //older tweet data
-const createTweetElement = function (tweet) {
+const createTweetElement = function(tweet) {
   const $tweet = $(`
   <section class="old-tweets">
   <article class="body">
@@ -41,17 +35,13 @@ const createTweetElement = function (tweet) {
   return $tweet;
 }
 
-const renderTweets = function (tweets) {
-  console.log(tweets);
+const renderTweets = function(tweets) {
   const $tweetContainer = $('.old-tweets')
   $tweetContainer.empty();
-  // loops through tweets
   for (const tweet of tweets) {
     const $createTweetElement = createTweetElement(tweet)
     $tweetContainer.prepend($createTweetElement)
   };
-  // calls createTweetElement for each tweet
-  // takes return value and appends it to the tweets container
 }
 
 $(document).ready(function () {
@@ -67,17 +57,13 @@ $(document).ready(function () {
 
   //renderTweets(data);
   $tweetForm = $('#tweet-form');
-  console.log('tweet form:', $tweetForm);
   $tweetForm.on('submit', (event) => {
     event.preventDefault();
 
-    //decode the submit data
-    console.log('tweet form:', $tweetForm);
     const urlencoded = $tweetForm.serialize();
-
     const maxCharCount = 140;
 
-    //bad request code
+    //bad request code and ajax request if within character count.
     const $textAreaValue = $('#tweet-text').val();
     if (($textAreaValue === "") || ($textAreaValue === null)) {
       return $('.warning').show().text("please fill the tweet first.");

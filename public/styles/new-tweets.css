@@ -1,3 +1,5 @@
+/* css page for new tweets that can be made.  */
+
 .new-tweet{
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -17,6 +19,7 @@
   height: 1000px;
 }
 
+/* character counter*/
 .counter{
   display: flex;
   justify-content: flex-end;
@@ -48,9 +51,7 @@ input:focus, textarea {
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: hidden;
-  
   transform: matrix(0.95, 0, 0, 0.95, 0, 0);
-
 }
 
 .counter-form{
@@ -77,9 +78,9 @@ input:focus, textarea {
   text-align: center;
 }
 
+/* tablet resizing*/
 @media screen and (min-width:768px) and (max-width: 1024px){
   .container{
     height: 600px;
-    
   }
 }

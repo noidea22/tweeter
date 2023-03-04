@@ -1,10 +1,4 @@
-html {
-}
-
-/*
- * Global layout stuff
- */
-
+/* navigation/banner on the top of the page.  */
 nav {  
   line-height: 1.15;
   color: #ffffff;

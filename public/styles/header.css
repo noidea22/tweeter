@@ -1,4 +1,4 @@
-
+/* css page for the top banner  */
 .header{
   height: 600px;
   width: 100%;
@@ -29,8 +29,10 @@ background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.
       100% { transform:translateY(0); }
   }
 
+  /* tablet resizing*/
   @media screen and (min-width:768px) and (max-width: 1024px){
    .header{
+      display: flex;
     
       background-color: rgb(255, 255, 255);
     }
