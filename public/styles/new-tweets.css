@@ -1,0 +1,85 @@
+.new-tweet{
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(0, 0, 0);
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container{
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 1000px;
+}
+
+.counter{
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Bungee', cursive;
+}
+
+#tweet-text{
+  display: flex;
+  background-color: transparent;
+  width: 500px;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: black;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+input:focus, textarea {
+  outline: none 
+}
+
+.tweet-button{
+  font-family: 'Bungee', cursive;
+  color: white;
+  background-color: #4056A1;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  
+  transform: matrix(0.95, 0, 0, 0.95, 0, 0);
+
+}
+
+.counter-form{
+  line-height: 1.15;
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(0, 0, 0);
+
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.warning{
+  font: caption;
+  font-size: xx-large;
+  color: rgb(255, 0, 0);
+  border-style: solid;
+  border-color: red;
+  width: 100%;
+  display: none;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px){
+  .container{
+    height: 600px;
+    
+  }
+}

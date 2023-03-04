@@ -15,9 +15,22 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  background-color: rgb(157, 223, 245);
+  color: rgb(0, 0, 0);
+  align-items: flex-start;
+  display: flex;
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px){
+ body{
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(255, 255, 255);
+ }
 }
 
 /*

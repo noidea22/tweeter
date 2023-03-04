@@ -1,0 +1,96 @@
+.old-tweets{
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(0, 0, 0);
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 400px;
+  justify-content: flex-start;
+ 
+}
+
+.username{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(0, 0, 0);
+  box-sizing: inherit;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 24px;
+}
+
+.user-handle{
+  padding-left: 500px;
+}
+
+.body{
+  width: 50rem;
+  padding: 20px;
+  height: 150pxs;
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  filter:drop-shadow(4px, 8px, 0, black);
+  margin: 5px;
+  background-color: #9bd9ff61;
+}
+.body:hover {
+  box-shadow: 4px 5px 11px rgba(33,33,33,.2); 
+}
+
+.article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px;
+  filter: drop-shadow(30px,10px,4px);
+}
+
+.tweet{
+  line-height: 1.15;
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(0, 0, 0);
+  border-style: solid;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.footer{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(0, 0, 0);
+  box-sizing: inherit;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 16px;
+  border-top-style: solid;
+  border-color: black;
+  border-width: 2px;
+
+}
+
+.icons{
+  justify-content: flex-end;
+}
+.icons i {
+color: rgb(255, 255, 255);
+}
+.icons i:hover {
+  color: rgb(95, 119, 255);
+  }
+
+.user-name{
+display: flex;
+align-items: center;
+  }
+
+.avatar{
+  height: 80px;
+}
